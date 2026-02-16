@@ -6,7 +6,7 @@ use Biteral\Payload\Payload;
 
 class EventPayload extends Payload {
     /**
-     * @var string $type The event type, one of the event types available at https://docs.biteral.net/guide/integration-data/events/types/
+     * @var string $type The event type, one of the event types available at https://docs.biteral.ai/guide/integration-data/events/types/
      */
     public $type;
 

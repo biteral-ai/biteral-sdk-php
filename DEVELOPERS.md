@@ -81,6 +81,6 @@ Here's an example of an `.env` with all the parameters you can optionally set:
 
 ```bash
 export BITERAL_API_KEY=your-api-key
-export BITERAL_API_BASE_URL=https://api.biteral.net
+export BITERAL_API_BASE_URL=https://api.biteral.ai
 export BITERAL_API_VERSION=1
 ```

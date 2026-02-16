@@ -3,14 +3,14 @@
 [![Packagist](https://img.shields.io/packagist/v/biteral/biteral-sdk-php.svg)](https://packagist.org/packages/biteral/biteral-sdk-php)
 [![PHP Version](https://img.shields.io/packagist/php-v/biteral/biteral-sdk-php.svg)](https://packagist.org/packages/biteral/biteral-sdk-php)
 
-Easily integrate [Biteral](https://biteral.net) AI tools into your e-commerce platform.
+Easily integrate [Biteral](https://biteral.ai) AI tools into your e-commerce platform.
 
 - 🔎 Natural language product search
 - 🧠 AI-powered product recommendations
 - 🏷️ Customer tagging and segmentation
 - 📊 Real-time trend recommendations
 
-SDK usage guides and API documentation 👉 https://docs.biteral.net
+SDK usage guides and API documentation 👉 https://docs.biteral.ai
 
 ---
 
@@ -66,7 +66,7 @@ $productPayload =
 $client->products()->ingest($productPayload);
 ```
 
-👉 [Get a free Biteral API key](https://biteral.net) for testing your integration
+👉 [Get a free Biteral API key](https://biteral.ai) for testing your integration
 
 ## Running examples
 

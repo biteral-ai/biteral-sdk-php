@@ -18,7 +18,7 @@ class Client
 {
     private $apiKey;
     private $version = 1;
-    private $baseUrl = 'https://api.biteral.net';
+    private $baseUrl = 'https://api.biteral.ai';
 
     /**
      * @param string $apiKey Your Biteral API key, tied to one of your projects as defined in your dashboard.
