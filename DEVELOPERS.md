@@ -16,7 +16,7 @@ This guide is for contributors and developers working on the Biteral PHP SDK its
 ## Getting Started
 
 ```bash
-git clone https://github.com/biteral-net/biteral-sdk-php.git
+git clone https://github.com/biteral-ai/biteral-sdk-php.git
 cd biteral-sdk-php
 composer install
 ```

@@ -18,8 +18,8 @@
     ],
     "support": {
         "email": "support@biteral.ai",
-        "issues": "https://github.com/biteral-net/biteral-sdk-php/issues",
-        "source": "https://github.com/biteral-net/biteral-sdk-php"
+        "issues": "https://github.com/biteral-ai/biteral-sdk-php/issues",
+        "source": "https://github.com/biteral-ai/biteral-sdk-php"
     },
     "minimum-stability": "stable",
     "require": {
