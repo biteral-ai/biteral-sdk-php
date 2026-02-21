@@ -11,15 +11,15 @@
     "authors": [
         {
             "name": "Biteral",
-            "email": "support@biteral.net",
-            "homepage": "https://biteral.net",
+            "email": "support@biteral.ai",
+            "homepage": "https://biteral.ai",
             "role": "Developer"
         }
     ],
     "support": {
-        "email": "support@biteral.net",
-        "issues": "https://github.com/biteral-net/biteral-sdk-php/issues",
-        "source": "https://github.com/biteral-net/biteral-sdk-php"
+        "email": "support@biteral.ai",
+        "issues": "https://github.com/biteral-ai/biteral-sdk-php/issues",
+        "source": "https://github.com/biteral-ai/biteral-sdk-php"
     },
     "minimum-stability": "stable",
     "require": {

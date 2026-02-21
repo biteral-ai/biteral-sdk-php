@@ -16,7 +16,7 @@ This guide is for contributors and developers working on the Biteral PHP SDK its
 ## Getting Started
 
 ```bash
-git clone https://github.com/biteral-net/biteral-sdk-php.git
+git clone https://github.com/biteral-ai/biteral-sdk-php.git
 cd biteral-sdk-php
 composer install
 ```
@@ -81,6 +81,6 @@ Here's an example of an `.env` with all the parameters you can optionally set:
 
 ```bash
 export BITERAL_API_KEY=your-api-key
-export BITERAL_API_BASE_URL=https://api.biteral.net
+export BITERAL_API_BASE_URL=https://api.biteral.ai
 export BITERAL_API_VERSION=1
 ```

@@ -1,33 +1,37 @@
 <?php
 
-namespace Biteral\Entity\Product;
+namespace Biteral\Entity\Event;
 
 use DateTime;
 use Biteral\Entity\EntityInterface;
-use Biteral\Payload\Product\ProductPayload;
-use Biteral\Payload\Product\ProductAttributePayload;
+use Biteral\Payload\Event\EventPayload;
 
 /**
- * Represents a product's attribute
+ * Represents an event
  */
-class ProductAttribute implements EntityInterface {
+class Event implements EntityInterface {
     /**
-     * @var string $id The product id
+     * @var string $id The event id
      */
     public $id;
 
     /**
-     * @var \DateTimeImmutable $createdAt The timestamp this product was created at Biteral at
+     * @var \DateTimeImmutable $createdAt The timestamp this event was created at Biteral at
      */
     public $createdAt;
 
     /**
-     * @var ?\DateTimeImmutable $updatedAt The timestamp this product was updated for the last time at Biteral
+     * @var ?\DateTimeImmutable $updatedAt The timestamp this event was updated for the last time at Biteral
      */
     public $updatedAt;
 
     /**
-     * @var ProductAttributePayload $payload
+     * @var string $projectId The Id of the project this event belongs to
+     */
+    public $projectId;
+
+    /**
+     * @var EventPayload $payload
      */
     public $payload;
 
@@ -35,23 +39,29 @@ class ProductAttribute implements EntityInterface {
         $id,
         $createdAt,
         $updatedAt,
+        $projectId,
         $payload
     )
     {
         $this->id = $id;
         $this->createdAt = $createdAt;
         $this->updatedAt = $updatedAt;
+        $this->projectId = $projectId;
         $this->payload = $payload;
     }
 
     public static function fromObject($object, $transformFromObject)
     {
         return
-            new ProductAttribute(
+            new Event(
                 $object->id,
                 new DateTime($object->createdAt, new \DateTimeZone('UTC')),
                 $object->updatedAt ? new DateTime($object->updatedAt, new \DateTimeZone('UTC')) : null,
-                $transformFromObject->payloadFromObject(ProductAttributePayload::class, $object->payload)
+                $object->projectId,
+                $transformFromObject->payloadFromObject(
+                    EventPayload::class,
+                    $object->payload
+                )
             );
     }
 }
